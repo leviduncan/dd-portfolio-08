@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700;900&family=Roboto:wght@300;400;700;900&display=swap");
+:root {
+  --dd-main: #DA7240;
+  --dd-black: #0C0A0B;
+  --dd-lt-gray: #f5f5f5;
+  --dd-white: #fefefe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+  /* Homepage */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: Oswald, sans0serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body *, body:after, body:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: 100ms;
+}
+body .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body .navbar {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: hsla(0, 0%, 100%, 0.737);
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  padding: 20px 0;
+}
+body .navbar .navbar-brand .logo {
   align-items: center;
+  background: #232323;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-family: Oswald, sans-serif;
+  font-size: 1.4em;
+  height: 40px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  width: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+body .navbar .navbar-brand .logo:hover {
+  background: var(--dd-main);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body .navbar .navbar-toggler,
+body .navbar .navbar-toggler:focus {
+  border: initial;
+  box-shadow: none;
+  padding: 20px;
 }
+body .navbar .nav-link {
+  background: transparent;
+  margin-left: 5px;
+  padding: 8px 20px;
+}
+body .navbar .nav-link:focus, body .navbar .nav-link:hover {
+  color: var(--dd-main);
+  background: var(--dd-black);
+}
+body #homepage {
+  width: 100vw;
+  height: 100vh;
+  /* Hero */
+}
+body #homepage #hero .hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+body #homepage #hero .hero .hero-content-left h1 {
+  font-size: 8vw;
+  line-height: 7vw;
+  font-weight: 700;
+}
+body #homepage #hero .hero .hero-content-right h4 {
+  font-size: 4vw;
+  line-height: 3.5vw;
+  margin-top: 2vw;
+}
+body #homepage #about {
+  background: var(--dd-black);
+}
+body #homepage #about .about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--dd-lt-gray);
+}
+body #homepage #about .about h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+}
+body #homepage #skills {
+  background: var(--dd-white);
+}
+body #homepage #skills .skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--dd-black);
+}
+body #homepage #skills .skills h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+}
+body #homepage #projects {
+  background: var(--dd-lt-gray);
+}
+body #homepage #projects .projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--dd-black);
+}
+body #homepage #projects .projects h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+}
+body #homepage #contact {
+  background: var(--dd-black);
+}
+body #homepage #contact .contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--dd-white);
+}
+body #homepage #contact .contact h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+}/*# sourceMappingURL=App.css.map */
