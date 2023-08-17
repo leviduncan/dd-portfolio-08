@@ -5,11 +5,11 @@ function Hero() {
         <section id="hero">
             <div className="container hero">
                 <div className="hero-content-left">
-                    <h1>Front End<br></br>UI Developer</h1>
+                    <h1><span className="text-orange">Powerful</span> Frontend Development</h1>
                 </div>
                 <div className="hero-content-right">
                     <h4>
-                        I build engaging front-end experiences.
+                        Building Engaging Front-end Experiences.
                     </h4>
                 </div>
             </div>

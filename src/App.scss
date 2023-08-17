@@ -3,7 +3,8 @@
 :root {
     --dd-main: #DA7240;
     --dd-black: #0C0A0B;
-    --dd-lt-gray: #f5f5f5;
+    --dd-gray: #0e0e0e;
+    --dd-lt-gray: #c7c7c7;
     --dd-white: #fefefe;
 }
 
@@ -35,22 +36,26 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .text-orange {
+        color: var(--dd-main);
+
+    }
 
     // Navigation
     .navbar {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background: hsla(0, 0%, 100%, .737);
+        background: #0c0a0be3;
         text-transform: uppercase;
         font-family: Oswald, sans-serif;
         padding: 20px 0;
+        border-bottom: solid 1px #1d1d1d6b;
 
         .navbar-brand {
             .logo {
                 align-items: center;
-                background: #232323;
+                background: var(--dd-main);
                 border-radius: 50%;
-                color: #fff;
                 display: flex;
                 font-family: Oswald, sans-serif;
                 font-size: 1.4em;
@@ -60,7 +65,7 @@ body {
                 width: 40px;
 
                 &:hover {
-                    background: var(--dd-main);
+                    background: var(--dd-white);
                 }
             }
 
@@ -77,10 +82,10 @@ body {
             background: transparent;
             margin-left: 5px;
             padding: 8px 20px;
+            color: var(--dd-white);
 
                    &:focus, &:hover {
             color: var(--dd-main);
-            background: var(--dd-black);
 
         } 
         }
@@ -96,6 +101,18 @@ body {
         /* Hero */
 
         #hero {
+            background: var(--dd-black);
+            color: var(--dd-white);
+            position: relative;
+
+            &::before {
+                content: "";
+                background: url('./assets/dots.png');
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                opacity: .3;
+            }
 
             .hero {
                 display: flex;
@@ -103,31 +120,39 @@ body {
                 flex-direction: column;
                 width: 100vw;
                 min-height: 100vh;
+                text-align: center;
+                position: relative;
+                z-index: 100;
 
                 .hero-content-left {
 
                     h1{
-                        font-size: 8vw;
+                        font-size: 6vw;
                         line-height: 7vw;
                         font-weight: 700;
+                        text-transform: uppercase;
                     }
                     
                 }
 
                 .hero-content-right {
                     h4 {
-                        font-size: 4vw;
+                        font-size: 2.5vw;
                         line-height: 3.5vw;
-                        margin-top: 2vw;
+                        margin-top: 1vw;
+                        font-family: Roboto, sans-serif;
+                        color: var(--dd-lt-gray);
                     }
                 }
+
             }
+                
 
 
         }
 
         #about {
-            background: var(--dd-black);
+            background: var(--dd-gray);
 
             .about{
             display: flex;
