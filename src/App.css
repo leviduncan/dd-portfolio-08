@@ -149,6 +149,7 @@ body #homepage #about {
   min-height: 100vh;
   background: var(--dd-gray);
   border-top: solid 1px #222;
+  overflow: hidden;
 }
 body #homepage #about .about {
   display: flex;
@@ -207,6 +208,19 @@ body #homepage #about .about .about-content .about-content-right {
     padding: 170px 40px 20px;
     top: -150px;
   }
+}
+body #homepage #about .about .about-content .about-content-right::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  z-index: 3;
+  background: var(--dd-main);
+  filter: blur(100px);
+  opacity: 0.2;
 }
 body #homepage #skills {
   background: var(--dd-white);
