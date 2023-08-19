@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiMenuAltRight } from 'react-icons/bi'
+import { FaHamburger } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
                 <div className="container">
                     <a className="navbar-brand" href="/"><div className="logo">D</div></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <BiMenuAltRight />
+                        <FaHamburger />
                     </button>
 
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">

@@ -13,6 +13,7 @@ function About() {
 
             <div className="about-content-left col-12 col-md-7 mx-auto my-4">
                 <img src={Darrin} alt="About Darrin" />
+                <div className="circle"></div>
             </div>
             <div className="about-content-right col-12 col-md-8 mx-auto mx-md-6">
             <p>

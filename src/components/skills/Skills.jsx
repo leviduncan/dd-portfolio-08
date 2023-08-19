@@ -1,14 +1,29 @@
 import React from 'react'
+import data from './skill-data'
+import { FaHtml5 } from 'react-icons/fa'
 
 function Skills() {
-  return (
-    <section id="skills">
-        <div className="container skills">
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque et facere eius recusandae? Eos!</p>
-        </div>
-    </section>
-  )
+    
+    const skillset = () => {
+
+    }
+
+    return (
+        <section id="skills">
+            
+            <div className="container skills">
+                <div className="skills-heading">
+                    <h2>My Skills</h2>
+                </div>
+                <div className="skills-content">
+                    {data.map((item, idx) => (
+                        <h4 key={idx}>{item.name}</h4>
+                        
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Skills
