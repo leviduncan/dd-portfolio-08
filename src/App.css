@@ -259,23 +259,37 @@ html body #homepage #skills {
   background: var(--dd-black);
   overflow: hidden;
   position: relative;
+  padding: 60px;
+  width: 100vw;
 }
 html body #homepage #skills .skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
-  color: var(--dd-white);
+  color: var(--dd-black);
+  background: var(--dd-lt-gray);
   position: relative;
+  padding: 40px;
+  border-radius: 20px;
   z-index: 4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 html body #homepage #skills .skills .skills-heading h2 {
   font-size: 55px;
   line-height: 60px;
-  color: var(--dd-white);
+  color: var(--dd-black);
   margin: 40px 0;
+}
+html body #homepage #skills .skills p {
+  width: 75%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  html body #homepage #skills .skills p {
+    width: 100%;
+  }
 }
 html body #homepage #skills .skills .skills-content {
   width: 100%;
@@ -294,11 +308,12 @@ html body #homepage #skills .skills .skills-content h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dd-lt-gray);
+  color: var(--dd-lt-black);
 }
 html body #homepage #skills .skills .skills-content h4:hover {
   color: var(--dd-main);
-  background: rgba(255, 255, 255, 0.1019607843);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
 }
 html body #homepage #skills::before {
   content: "";
