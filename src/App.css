@@ -62,8 +62,9 @@ html body .navbar {
   border-bottom: solid 1px rgba(39, 39, 39, 0.4196078431);
 }
 html body .navbar .navbar-brand .logo {
+  background: var(--dd-white);
+  color: var(--dd-black);
   align-items: center;
-  background: var(--dd-main);
   border-radius: 50%;
   display: flex;
   font-family: Oswald, sans-serif;
@@ -72,11 +73,10 @@ html body .navbar .navbar-brand .logo {
   justify-content: center;
   padding: 5px;
   width: 40px;
-  color: var(--dd-white);
 }
 html body .navbar .navbar-brand .logo:hover {
-  background: var(--dd-white);
-  color: var(--dd-black);
+  background: var(--dd-main);
+  color: var(--dd-white);
 }
 html body .navbar .navbar-toggler,
 html body .navbar .navbar-toggler:focus {
@@ -168,6 +168,7 @@ html body #homepage #about {
   background: var(--dd-gray);
   border-top: solid 1px #222;
   overflow: hidden;
+  padding-top: 80px;
 }
 html body #homepage #about .about {
   display: flex;
@@ -272,7 +273,7 @@ html body #homepage #skills {
   background: var(--dd-black);
   overflow: hidden;
   position: relative;
-  padding: 80px 0;
+  padding: 140px 0;
   width: 100vw;
 }
 @media (max-width: 767px) {

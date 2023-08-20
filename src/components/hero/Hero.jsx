@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function Hero() {
     return (
@@ -15,7 +14,7 @@ function Hero() {
                     </h4>
                 </div>
                 <div>
-                    <Link to="#contact" className="btn btn-light btn-lg col-12 col-md-6 col-lg-3 my-4">Let's Connect</Link>
+                    <a href="#contact" className="btn btn-light btn-lg col-12 col-md-6 col-lg-3 my-4">Let's Connect</a>
                 </div>
             </div>
         </section>

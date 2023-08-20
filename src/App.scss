@@ -74,8 +74,9 @@ html {
     
                 .navbar-brand {
                     .logo {
+                        background: var(--dd-white);
+                        color: var(--dd-black);
                         align-items: center;
-                        background: var(--dd-main);
                         border-radius: 50%;
                         display: flex;
                         font-family: Oswald, sans-serif;
@@ -84,11 +85,10 @@ html {
                         justify-content: center;
                         padding: 5px;
                         width: 40px;
-                        color: var(--dd-white);
     
                         &:hover {
-                            background: var(--dd-white);
-                            color: var(--dd-black);
+                            background: var(--dd-main);
+                            color: var(--dd-white);
                         }
                     }
     
@@ -208,6 +208,7 @@ html {
                     background: var(--dd-gray);
                     border-top: solid 1px #222;
                     overflow: hidden;
+                    padding-top: 80px;
     
                     .about {
                         display: flex;
@@ -328,7 +329,7 @@ html {
                     background: var(--dd-black);
                     overflow: hidden;
                     position: relative;
-                    padding: 80px 0;
+                    padding: 140px 0;
                     width: 100vw;
 
                     @media (max-width: 767px) {

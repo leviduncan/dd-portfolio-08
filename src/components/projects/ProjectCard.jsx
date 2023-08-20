@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { a } from 'react-router-dom'
 
 function ProjectCard(props) {
     const { img, title, desc, demo, git, dir } = props
@@ -10,8 +10,8 @@ function ProjectCard(props) {
                 <h4>{title}</h4>
                 <p>{desc}</p>
                 <div>
-                    <Link to={demo} >View Demo</Link>
-                    <Link to={git} >Git</Link>
+                    <a href={demo} >View Demo</a>
+                    <a href={git} >Git</a>
                 </div>
             </div>
             <div className="project-content-image  col-12 col-md-5">
