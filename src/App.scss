@@ -9,8 +9,19 @@
     --dd-white: #fefefe;
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: 100ms;
+}
+
 html {
-    scroll-behavior: smooth;body {
+    scroll-behavior: smooth;
+    
+    body {
     
             font-family: Roboto, sans-serif;
             font-size: 19px;
@@ -204,7 +215,6 @@ html {
                         flex-direction: column;
                         width: 100vw;
                         min-height: 100vh;
-                        padding: 40px;
                         color: var(--dd-lt-gray);
     
                         .about-heading {
@@ -232,6 +242,14 @@ html {
                                 position: relative;
                                 top: 0px;
                                 z-index: 10;
+                                    scale: 1;
+                                    transition-duration: 500ms;
+
+
+                                    &:hover {
+                                        scale: 1.05;
+                                    }
+    
     
                                 &::after {
                                     position: absolute;
@@ -243,7 +261,7 @@ html {
                                     top: 40px;
                                     left: 46px;
                                     z-index: 5;
-    
+
                                     @media (max-width: 767px) {
                                         width: 200px;
                                         height: 200px;
@@ -283,7 +301,7 @@ html {
                                 z-index: 1;
     
                                 @media (max-width: 767px) {
-                                    padding: 170px 40px 20px;
+                                    padding: 170px 20px 20px;
                                     top: -150px;
                                 }
     
@@ -293,7 +311,6 @@ html {
                                     width: 600px;
                                     height: 600px;
                                     border-radius: 50%;
-                                    ;
                                     top: -150px;
                                     left: -150px;
                                     z-index: 3;
@@ -311,8 +328,12 @@ html {
                     background: var(--dd-black);
                     overflow: hidden;
                     position: relative;
-                    padding: 60px;
-                        width: 100vw;
+                    padding: 80px 0;
+                    width: 100vw;
+
+                    @media (max-width: 767px) {
+                        padding: 40px 15px;
+                    }
     
                     .skills {
                         display: flex;
@@ -354,6 +375,8 @@ html {
                             grid-column-gap: 1rem;
                             grid-row-gap: 1rem;
                             text-align: center;
+                            border-top: solid 1px #7c7c7c60;
+                            padding-top: 40px;
     
     
                             h4 {
@@ -365,11 +388,15 @@ html {
                                 align-items: center;
                                 justify-content: center;
                                 color: var(--dd-lt-black);
+                                scale: 1;
+                                transition-duration: 500ms;
     
                                 &:hover {
                                     color: var(--dd-main);
                                     background: #ffffff33;
                                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
+                                    cursor: pointer;
+                                    scale: 1.1;
                                 }
                             }
                         }
@@ -393,21 +420,77 @@ html {
     
                 #projects {
                     background: var(--dd-gray);
+                    overflow: hidden;
+                    position: relative;
+                    padding: 80px 0;
+                    width: 100vw;
+
+                    @media (max-width: 767px) {
+                        padding: 40px 15px;
+                    }
     
                     .projects {
+                        position: relative;
+                        z-index: 5;
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
                         width: 100vw;
-                        min-height: 100vh;
                         color: var(--dd-lt-gray);
     
                         h2 {
-                            font-size: 3vw;
-                            line-height: 3vw;
+                            font-size: 55px;
+                            line-height: 60px;
                             color: var(--dd-white);
+                            margin: 40px 0;
+                            text-align: center;
+                        }
+
+                        .projects-content {
+                            padding: 20px;
+                            background: var(--dd-black);
+                            border-radius: 20px;
+
+                            .projects-content-info {
+                                    padding: 20px;
+
+                                h4 {
+                                    color: var(--dd-white);
+                                }
+                            }
+
+                            .project-content-image {
+                                overflow: hidden;
+                                border-radius: 20px;
+                                box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
+
+
+                                img {
+                                    width: 100%;
+                                    scale: 1;
+                                    transition-duration: 500ms;
+
+                                    &:hover {
+                                        scale: 1.2;
+                                    }
+                                }
+                            }
                         }
     
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 70%;
+                        height: 900px;
+                        border-radius: 50%;
+                        top: 132px;
+                        right: 15%;
+                        z-index: 1;
+                        background: var(--dd-main);
+                        filter: blur(100px);
+                        opacity: .12;
                     }
                 }
     
