@@ -370,7 +370,6 @@ html body #homepage #projects .projects {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
   color: var(--dd-lt-gray);
 }
 html body #homepage #projects .projects h2 {
@@ -384,6 +383,11 @@ html body #homepage #projects .projects .projects-content {
   padding: 20px;
   background: var(--dd-black);
   border-radius: 20px;
+  border: solid 2px var(--dd-gray-shadow);
+  transition-duration: 500ms;
+}
+html body #homepage #projects .projects .projects-content:hover {
+  background: var(--dd-gray-shadow);
 }
 html body #homepage #projects .projects .projects-content .projects-content-info {
   padding: 20px;
@@ -393,7 +397,7 @@ html body #homepage #projects .projects .projects-content .projects-content-info
 }
 html body #homepage #projects .projects .projects-content .project-content-image {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
 }
 html body #homepage #projects .projects .projects-content .project-content-image img {
@@ -418,6 +422,7 @@ html body #homepage #projects::before {
   opacity: 0.12;
 }
 html body #homepage #contact {
+  position: relative;
   background: var(--dd-black);
 }
 html body #homepage #contact .contact {
@@ -431,4 +436,17 @@ html body #homepage #contact .contact {
 html body #homepage #contact .contact h2 {
   font-size: 3vw;
   line-height: 3vw;
+}
+html body #homepage #contact::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 900px;
+  border-radius: 50%;
+  top: 132px;
+  right: 15%;
+  z-index: 1;
+  background: var(--dd-main);
+  filter: blur(100px);
+  opacity: 0.12;
 }/*# sourceMappingURL=App.css.map */
