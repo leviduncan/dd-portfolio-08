@@ -1,13 +1,7 @@
 import React from 'react'
 import data from './skill-data'
-import { FaHtml5 } from 'react-icons/fa'
 
 function Skills() {
-    
-    const skillset = () => {
-
-    }
-
     return (
         <section id="skills">
             <div className="container skills">

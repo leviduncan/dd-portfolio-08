@@ -505,6 +505,8 @@ html {
                     background: var(--dd-black);
     
                     .contact {
+                        position: relative;
+                        z-index: 5;
                         display: flex;
                         justify-content: center;
                         flex-direction: column;

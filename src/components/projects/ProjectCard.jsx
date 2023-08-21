@@ -1,5 +1,4 @@
 import React from 'react'
-import { a } from 'react-router-dom'
 
 function ProjectCard(props) {
     const { img, title, desc, demo, git, dir } = props
