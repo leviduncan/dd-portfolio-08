@@ -1,5 +1,5 @@
 const data = [
-            { name: 'Html5', ico: '' },
+            { name: 'HTML5', ico: '' },
             { name: 'CSS3', ico: '' },
             { name: 'ES6', ico: '' },
             { name: 'Sass', ico: '' },
@@ -9,10 +9,11 @@ const data = [
             { name: 'JSX', ico: '' },
             { name: 'Bootstrap', ico: '' },
 
-            { name: 'Node.js', ico: '' },
+            { name: 'Node', ico: '' },
             { name: 'Express', ico: '' },
             { name: 'MongoDB', ico: '' },
             { name: 'Mongoose', ico: '' },
+            { name: 'APIs', ico: '' },
 
             { name: 'GitHub', ico: '' },
             { name: 'Bitbucket', ico: '' },

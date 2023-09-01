@@ -381,22 +381,30 @@ html {
     
     
                             h4 {
-                                background: #ffffff09;
+                                background: #ffffff1f;
                                 border-radius: 8px;
                                 padding: 10px;
                                 min-height: 64px;
                                 display: flex;
                                 align-items: center;
-                                justify-content: center;
+                                justify-content: flex-start;
                                 color: var(--dd-lt-black);
                                 scale: 1;
                                 transition-duration: 500ms;
+
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+                                    border:solid 1px rgba(0, 0, 0, 0.116);
+                                    border-radius: 50%;
+                                    padding: 5px;
+                                    margin-right: 8px;
+                                }
     
                                 &:hover {
                                     color: var(--dd-main);
                                     background: #ffffff33;
                                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
-                                    cursor: pointer;
                                     scale: 1.1;
                                 }
                             }
