@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import Connect from './Connect'
+import Thanks from './Thanks'
 
 const Contact = () => {
-
+const [connect, setConnect] = useState(true)
   const sendEmail = (e) => {
     e.preventDefault()
 
@@ -13,48 +15,16 @@ const Contact = () => {
       'MMmgFp0fP4oyFylX1'
     ).then(res => {
       console.log(res)
+      setConnect(false)
+      console.log(connect)
     }).catch(err => console.log(err))
   }
 
   return (
-    <section id="contact">
-      <div className="container contact">
-        <h2>Contact</h2>
-        <form className="contact-form" onSubmit={sendEmail} method='POST' action=''>
-          <div className="mb-3">
-            <label htmlFor="full-name" className="form-label">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              className="form-control"
-              placeholder="Full-name"
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email address</label>
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              placeholder="Email-address"
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="message" className="form-label">Message: </label>
-            <textarea
-              name="message"
-              className="form-control"
-              placeholder="Message"
-              rows="4"
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">Send</button>
-        </form>
-      </div>
-    </section>
+    <>
+      {connect ? <Connect sendEmail={sendEmail} /> : <Thanks />}
+    </>
+    
   )
 }
 
