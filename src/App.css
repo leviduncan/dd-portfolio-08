@@ -14,11 +14,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition-duration: 100ms;
+  transition-duration: 50ms;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--dd-black);
 }
 html body {
   font-family: Roboto, sans-serif;
@@ -32,6 +33,24 @@ html body h4,
 html body h5,
 html body h6 {
   font-family: Oswald, sans0serif;
+}
+html body h2 {
+  font-size: 32px;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--dd-white);
+  text-align: left;
+}
+@media (min-width: 768) {
+  html body h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1069px) {
+  html body h2 {
+    font-size: 48px;
+  }
 }
 html body .container {
   padding-left: 20px;
@@ -51,6 +70,21 @@ html body .btn:hover {
 }
 html body .circle {
   border-radius: 50%;
+}
+html body .alink {
+  color: var(--dd-main);
+  padding: 20px;
+  margin: 10px;
+}
+html body .alink svg {
+  width: 30px;
+  height: 30px;
+}
+html body .alink:hover {
+  background: var(--dd-main);
+  box-shadow: 0 0 15px rgba(255, 125, 3, 0.555);
+  color: var(--dd-white);
+  border-radius: 8px;
 }
 html body .navbar {
   -webkit-backdrop-filter: blur(10px);
@@ -179,18 +213,17 @@ html body #homepage #about .about {
   color: var(--dd-lt-gray);
 }
 html body #homepage #about .about .about-heading h2 {
-  font-size: 55px;
-  line-height: 60px;
   color: var(--dd-white);
-  margin-top: 40px;
+  text-align: center;
 }
 html body #homepage #about .about .about-content {
   max-width: 900px;
   width: 100%;
+  padding-bottom: 60px;
 }
 html body #homepage #about .about .about-content .about-content-left {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border: solid 1px rgba(255, 255, 255, 0.6901960784);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.801);
   border-radius: 50%;
@@ -208,12 +241,12 @@ html body #homepage #about .about .about-content .about-content-left:hover {
 html body #homepage #about .about .about-content .about-content-left::after {
   position: absolute;
   content: "";
-  width: 312px;
-  height: 312px;
+  width: 250px;
+  height: 250px;
   background: rgba(255, 255, 255, 0.1176470588);
   border-radius: 50%;
-  top: 40px;
-  left: 46px;
+  top: 23px;
+  left: 27px;
   z-index: 5;
 }
 @media (max-width: 767px) {
@@ -231,15 +264,16 @@ html body #homepage #about .about .about-content .about-content-left::after {
   }
 }
 html body #homepage #about .about .about-content .about-content-left img {
-  width: 600px;
-  margin-left: -80px;
-  margin-top: 5px;
+  width: 433px;
+  margin-left: -47px;
+  margin-top: 19px;
   position: absolute;
   z-index: 9;
 }
 @media (max-width: 767px) {
   html body #homepage #about .about .about-content .about-content-left img {
     width: 400px;
+    margin-left: -67px;
   }
 }
 html body #homepage #about .about .about-content .about-content-right {
@@ -269,6 +303,13 @@ html body #homepage #about .about .about-content .about-content-right::before {
   filter: blur(100px);
   opacity: 0.2;
 }
+html body #homepage #about .about .about-content .reach-out {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  top: -100px;
+}
 html body #homepage #skills {
   background: var(--dd-black);
   overflow: hidden;
@@ -283,8 +324,6 @@ html body #homepage #skills {
 }
 html body #homepage #skills .skills {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: var(--dd-black);
   background: var(--dd-lt-gray);
@@ -295,15 +334,11 @@ html body #homepage #skills .skills {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 html body #homepage #skills .skills .skills-heading h2 {
-  font-size: 55px;
-  line-height: 60px;
   color: var(--dd-black);
-  margin: 40px 0;
 }
 html body #homepage #skills .skills p {
   width: 75%;
   margin-bottom: 40px;
-  text-align: center;
 }
 @media (max-width: 767px) {
   html body #homepage #skills .skills p {
@@ -343,7 +378,7 @@ html body #homepage #skills .skills .skills-content h4 svg {
 }
 html body #homepage #skills .skills .skills-content h4:hover {
   color: var(--dd-main);
-  background: rgba(255, 255, 255, 0.2);
+  background: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
   scale: 1.1;
 }
@@ -361,7 +396,6 @@ html body #homepage #skills::before {
   opacity: 0.2;
 }
 html body #homepage #projects {
-  background: var(--dd-gray);
   overflow: hidden;
   position: relative;
   padding: 80px 0;
@@ -381,11 +415,7 @@ html body #homepage #projects .projects {
   color: var(--dd-lt-gray);
 }
 html body #homepage #projects .projects h2 {
-  font-size: 55px;
-  line-height: 60px;
   color: var(--dd-white);
-  margin: 40px 0;
-  text-align: center;
 }
 html body #homepage #projects .projects .projects-content {
   padding: 20px;
@@ -431,7 +461,7 @@ html body #homepage #projects::before {
 }
 html body #homepage #contact {
   position: relative;
-  background: var(--dd-black);
+  margin: 140px auto;
 }
 html body #homepage #contact .contact {
   position: relative;
@@ -440,12 +470,13 @@ html body #homepage #contact .contact {
   justify-content: center;
   flex-direction: column;
   width: 100vw;
-  min-height: 100vh;
   color: var(--dd-white);
-}
-html body #homepage #contact .contact h2 {
-  font-size: 3vw;
-  line-height: 3vw;
+  background: var(--dd-main);
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  z-index: 4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 html body #homepage #contact::before {
   content: "";

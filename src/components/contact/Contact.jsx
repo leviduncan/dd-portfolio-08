@@ -21,9 +21,9 @@ const [connect, setConnect] = useState(true)
   }
 
   return (
-    <>
+    <section id="contact">
       {connect ? <Connect sendEmail={sendEmail} /> : <Thanks />}
-    </>
+    </section>
     
   )
 }

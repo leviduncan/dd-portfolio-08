@@ -1,4 +1,5 @@
 import React from 'react'
+import * as Connect from 'react-icons/fa'
 
 function ProjectCard(props) {
     const { img, title, desc, demo, git, dir } = props
@@ -9,8 +10,8 @@ function ProjectCard(props) {
                 <h4>{title}</h4>
                 <p>{desc}</p>
                 <div>
-                    <a href={demo} >View Demo</a>
-                    <a href={git} >Git</a>
+                    <a className="alink" href={demo} target="_blank"><Connect.FaExternalLinkAlt /></a>
+                    <a className="alink" href={git} target="_blank"><Connect.FaGithub /></a>
                 </div>
             </div>
             <div className="project-content-image  col-12 col-md-5">
@@ -21,3 +22,4 @@ function ProjectCard(props) {
 }
 
 export default ProjectCard
+

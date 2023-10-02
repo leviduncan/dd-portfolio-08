@@ -29,6 +29,14 @@ function Projects() {
             dir: false,
             img: require('../../assets/recipe-app.png'),
         },
+        {
+            title: 'Archived Portfolio',
+            desc: 'This is a prior version of my portfolio',
+            demo: 'https://archive01.darrinduncan.com/',
+            git: 'https://github.com/leviduncan/dd-portfolio.git',
+            dir: true,
+            img: require('../../assets/archived01.png'),
+        },
     ]
 
     return (

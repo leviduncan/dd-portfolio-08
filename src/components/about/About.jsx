@@ -9,7 +9,7 @@ const About = () => {
     <div className="container about">
         <div className="about-heading text-center">
             <h2>Hi, I'm Darrin Duncan</h2>
-            <h3>A Super Frontend Developer</h3>
+            <h3>Your Super Frontend Developer</h3>
         </div>
         <div className="about-content d-flex mx-auto mt-4 flex-column">
 
@@ -19,13 +19,14 @@ const About = () => {
             </div>
             <div className="about-content-right col-12 col-md-8 mx-auto mx-md-6">
             <p>
-            As a Web Developer, I often gather, define and interpret business requirements, to design, build, enhance, test, and deploy modern web applications. I use code to solve problems. Whether working independently or within a team setting, I am able to juggle multiple projects while managing quality, communication, and creativity. I am always available to chat with you about your next project or current one. So let's connect! I look forward to speaking with you.
+            I am a seasoned freelance Front-End Development Professional with over 7 years of experience. Specializing in crafting captivating and user-friendly websites and applications, I excel in leveraging cutting-edge technologies and design trends. My commitment to maintaining design integrity and optimizing user experiences across various devices showcases my dedication to delivering high-quality solutions. My versatile skill set encompasses HTML/CSS, JavaScript (including React.js), responsive design, version control, and more, making me a valuable asset in web development.
             </p>
                   </div>
                   <div className="reach-out">
-                      <Connect.FaGithub />
-                      <Connect.FaLinkedin />
-                      <AiConnect.AiOutlineMail />
+                    <a className="alink" href="https://github.com/leviduncan" target="_blank"><Connect.FaGithub /></a>
+                      
+                      <a className="alink" href="https://www.linkedin.com/in/darrinduncan/" target="_blank"><Connect.FaLinkedin /></a>
+                      <a className="alink" href="mailto:darrin@darrinduncan.com" target="_blank"><AiConnect.AiOutlineMail /></a>
                   </div>
         </div>
     </div>

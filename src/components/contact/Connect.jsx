@@ -3,7 +3,7 @@ import React from 'react'
 function Connect(props) {
     const { sendEmail } = props
   return (
-    <section id="contact">
+    
       <div className="container contact">
         <h2>Contact</h2>
         <form className="contact-form" onSubmit={sendEmail} method='POST' action=''>
@@ -37,10 +37,10 @@ function Connect(props) {
               required
             />
           </div>
-          <button type="submit" className="btn btn-primary">Send</button>
+          <button type="submit" className="btn btn-light btn-lg col-12 col-md-6 col-lg-3 my-4">Send</button>
+          
         </form>
       </div>
-    </section>
   )
 }
 
