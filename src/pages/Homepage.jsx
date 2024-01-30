@@ -4,6 +4,7 @@ import About from '../components/about/About'
 import Skills from '../components/skills/Skills'
 import Projects from '../components/projects/Projects'
 import Contact from '../components/contact/Contact'
+import CursorFollower from '../components/utils/Follower'
 
 function Homepage() {
   return (
@@ -13,6 +14,7 @@ function Homepage() {
         <Skills />
         <Projects />
         <Contact />
+        <CursorFollower />
     </div>
   )
 }

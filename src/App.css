@@ -21,6 +21,18 @@ html {
   scroll-behavior: smooth;
   background: var(--dd-black);
 }
+html #follower {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 2;
+  background: var(--dd-main);
+  filter: blur(100px);
+  opacity: 0.2;
+  pointer-events: none;
+}
 html body {
   font-family: Roboto, sans-serif;
   font-size: 19px;
@@ -150,19 +162,6 @@ html body #homepage #hero::after {
   top: 0;
   z-index: 4;
 }
-html body #homepage #hero::before {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  top: -150px;
-  left: -150px;
-  z-index: 3;
-  background: var(--dd-main);
-  filter: blur(100px);
-  opacity: 0.2;
-}
 html body #homepage #hero .hero {
   display: flex;
   justify-content: center;
@@ -176,25 +175,45 @@ html body #homepage #hero .hero {
 html body #homepage #hero .hero .hero-content-left {
   width: 100%;
 }
+html body #homepage #hero .hero .hero-content-left .text-orange {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  html body #homepage #hero .hero .hero-content-left .text-orange {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+}
 html body #homepage #hero .hero .hero-content-left h1 {
-  font-size: 6vw;
-  line-height: 7vw;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   html body #homepage #hero .hero .hero-content-left h1 {
-    font-size: 12vw;
-    line-height: 12vw;
+    font-size: 4rem;
+    line-height: 4rem;
     font-weight: 700;
   }
 }
 html body #homepage #hero .hero .hero-content-right h4 {
-  font-size: 2.5vw;
-  line-height: 3.5vw;
+  font-size: 1rem;
+  line-height: 1.2rem;
   margin-top: 1vw;
   font-family: Roboto, sans-serif;
   color: var(--dd-lt-gray);
+}
+@media (min-width: 768px) {
+  html body #homepage #hero .hero .hero-content-right h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
 }
 html body #homepage #about {
   width: 100vw;

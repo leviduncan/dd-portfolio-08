@@ -6,11 +6,12 @@ function Hero() {
             <div className="shape-org"></div>
             <div className="container hero">
                 <div className="hero-content-left">
-                    <h1><div className="text-orange">Powerful</div> Frontend Development</h1>
+                    <div className="text-orange">Darrin Duncan</div> 
+                    <h1>Frontend Developer</h1>
                 </div>
                 <div className="hero-content-right">
                     <h4>
-                        Building Engaging Front-end Experiences.
+                        Passionate Front-End Developer dedicated to crafting immersive digital experiences. I blend creativity with cutting-edge technologies to shape user-friendly websites that captivate, engage, and leave a lasting impression. Let's turn your vision into a seamless online reality.
                     </h4>
                 </div>
                 <div>
