@@ -19,7 +19,7 @@ const About = () => {
             </div>
             <div className="about-content-right col-12 col-md-8 mx-auto mx-md-6">
             <p>
-            I am a seasoned freelance Front-End Development Professional with over 7 years of experience. Specializing in crafting captivating and user-friendly websites and applications, I excel in leveraging cutting-edge technologies and design trends. My commitment to maintaining design integrity and optimizing user experiences across various devices showcases my dedication to delivering high-quality solutions. My versatile skill set encompasses HTML/CSS, JavaScript (including React.js), responsive design, version control, and more, making me a valuable asset in web development.
+            Hey there! I'm a seasoned freelance Front-End Developer with a love for creating captivating and user-friendly websites. With over 7 years of experience, I enjoy weaving together the latest technologies and design trends. What drives me is maintaining design integrity and ensuring that users across different devices have the best experience possible. My toolkit includes HTML/CSS, JavaScript (especially React.js), responsive design, version control, and more. Let's chat about bringing your ideas to life in the digital world!
             </p>
                   </div>
                   <div className="reach-out">
